@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#play{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 9999999;
+	padding: 10px;
+	cursor: pointer;
+}
+.contenedor{
+	width: 100%;
+	background: url('../img/ironBanner.png') no-repeat center rgba(0,0,0,1);
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.contenido{
+	width: 100%;
+	padding: 220px 0;
+	z-index: 1;
+	background: rgba(0,0,0,0.3);
+}
+.contenido .logo{
+	width: 500px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+.contenido img{
+	width: 100%;
+	display: inline-block;
+}
+.videoBg{
+	width: 100%;
+	min-width: 1280px;
+	position: absolute;
+	pointer-events: none;
+}
+@media screen and (max-width: 570px){
+	.videoBg{
+		display: none;
+	}
+}

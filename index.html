@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+	<meta charset="UTF-8">
+	<title>Video Back</title>
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/videoBack.css">
+</head>
+<body>
+	<section class="contenedor">
+		<header class="contenido">
+			<div class="logo">
+				<img src="img/logo.png" alt="Logo Destiny 1">
+			</div>
+		</header>
+		<!-- playsinline autoplay muted  -->
+		<!-- <button id="play" onclick="play()">PLay</button> -->
+		<video id="media" class="videoBg" playsinline autoplay muted loop>
+			<source src="video/ironBanner.webm" type="video/webm">
+			<source src="video/ironBanner.mp4" type="video/mp4">
+		</video>
+	</section>
+	<script>
+		function play() {
+			let video = document.querySelector('#media');
+			video.play();
+		}
+	</script>
+</body>
+</html>
