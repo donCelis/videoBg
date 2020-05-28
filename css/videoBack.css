@@ -26,9 +26,12 @@
 }
 .contenido{
 	width: 100%;
-	padding: 220px 0;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	z-index: 1;
 	background: rgba(0,0,0,0.3);
+	height: 100%;
 }
 .contenido .logo{
 	width: 500px;
